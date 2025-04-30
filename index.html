@@ -3,186 +3,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sport con la Racchetta</title>
+  <title>Tennis: Lo Sport con la Racchetta</title>
   <style>
-    :root {
-      --main-color: #2196f3;
-      --accent-color: #00e676;
-      --text-color: #333;
-      --bg-light: #f9f9f9;
-      --bg-dark: #111;
-      --font: 'Segoe UI', sans-serif;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
     body {
-      font-family: var(--font);
+      margin: 0;
+      font-family: Arial, sans-serif;
       line-height: 1.6;
-      color: var(--text-color);
-      background-color: white;
+      background-color: #ffffff;
+      color: #222;
     }
 
     header {
-      background: linear-gradient(135deg, var(--main-color), var(--accent-color));
+      background-color: #0366d6;
       color: white;
-      padding: 100px 20px;
+      padding: 60px 20px;
       text-align: center;
     }
 
     header h1 {
-      font-size: 3em;
+      font-size: 2.5em;
       margin-bottom: 0.3em;
     }
 
-    nav {
-      background-color: var(--bg-dark);
-      padding: 10px 20px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    nav li {
-      margin: 0 15px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: var(--accent-color);
+    header p {
+      font-size: 1.2em;
     }
 
     section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
 
     section h2 {
-      font-size: 2em;
-      margin-bottom: 20px;
-      border-left: 5px solid var(--main-color);
-      padding-left: 10px;
-    }
-
-    .grid {
-      display: grid;
-      gap: 30px;
-    }
-
-    @media (min-width: 700px) {
-      .grid-2 {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    .card {
-      background: var(--bg-light);
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-      transition: transform 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
+      color: #0366d6;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 5px;
     }
 
     footer {
-      background-color: var(--bg-dark);
-      color: white;
+      background-color: #f4f4f4;
+      color: #666;
       text-align: center;
       padding: 20px;
       margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Sport con la Racchetta</h1>
-    <p>Tennis, padel, squash, badminton: tutto in un solo sito.</p>
+    <h1>Tennis</h1>
+    <p>Uno sport elegante, storico e sempre attuale</p>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#tennis">Tennis</a></li>
-      <li><a href="#padel">Padel</a></li>
-      <li><a href="#squash">Squash</a></li>
-      <li><a href="#badminton">Badminton</a></li>
-    </ul>
-  </nav>
-
-  <section id="tennis">
-    <h2>Tennis</h2>
-    <div class="grid grid-2">
-      <div class="card">
-        <p>Il tennis è lo sport con la racchetta più conosciuto. Combina tecnica, resistenza e tattica. Giocato su diversi tipi di superficie.</p>
-      </div>
-      <div class="card">
-        <p>Praticato a livello professionistico e amatoriale in tutto il mondo, con tornei come Wimbledon e Roland Garros.</p>
-      </div>
-    </div>
+  <section id="storia">
+    <h2>Storia del Tennis</h2>
+    <p>Il tennis moderno nasce in Inghilterra nel XIX secolo, ma le sue radici risalgono al gioco francese "jeu de paume". Con l'evoluzione delle regole e l'introduzione delle superfici sintetiche, è diventato uno degli sport più praticati e seguiti al mondo.</p>
   </section>
 
-  <section id="padel">
-    <h2>Padel</h2>
-    <div class="grid grid-2">
-      <div class="card">
-        <p>Il padel è uno sport in rapida crescita. Si gioca in doppio, con pareti che fanno parte del gioco.</p>
-      </div>
-      <div class="card">
-        <p>Perfetto per socializzare e divertirsi. I campi si trovano sempre più spesso nei centri sportivi moderni.</p>
-      </div>
-    </div>
+  <section id="regole">
+    <h2>Regole di Base</h2>
+    <p>Il tennis si gioca in singolo o doppio. L'obiettivo è colpire la palla con la racchetta e farla atterrare nel campo avversario. Il punteggio segue un sistema unico: 15, 30, 40 e game. Si gioca su 3 o 5 set, a seconda del torneo.</p>
   </section>
 
-  <section id="squash">
-    <h2>Squash</h2>
-    <div class="grid grid-2">
-      <div class="card">
-        <p>Uno sport intenso giocato in ambienti chiusi. Richiede riflessi rapidi e grande velocità di movimento.</p>
-      </div>
-      <div class="card">
-        <p>Perfetto per allenamenti cardio ad alta intensità. Molto praticato nei club indoor.</p>
-      </div>
-    </div>
+  <section id="attrezzatura">
+    <h2>Attrezzatura</h2>
+    <p>Per giocare servono: una racchetta adatta al proprio livello, palline pressurizzate, scarpe specifiche da tennis e un abbigliamento comodo. I materiali della racchetta influenzano molto la potenza e il controllo dei colpi.</p>
   </section>
 
-  <section id="badminton">
-    <h2>Badminton</h2>
-    <div class="grid grid-2">
-      <div class="card">
-        <p>Sport con la racchetta tra i più rapidi. Si gioca con un volano e racchette leggere.</p>
-      </div>
-      <div class="card">
-        <p>Diffuso soprattutto in Asia, ma praticato anche in Europa e nelle scuole.</p>
-      </div>
-    </div>
+  <section id="tornei">
+    <h2>I Grandi Tornei</h2>
+    <p>I quattro tornei del Grande Slam sono i più prestigiosi: Australian Open, Roland Garros, Wimbledon e US Open. Ognuno ha una sua superficie e stile di gioco, rendendo ogni competizione unica.</p>
+  </section>
+
+  <section id="campioni">
+    <h2>Campioni Famosi</h2>
+    <p>Roger Federer, Rafael Nadal, Novak Djokovic e Serena Williams sono tra i più grandi tennisti di sempre. Hanno lasciato un'impronta indelebile con il loro talento, la loro costanza e la loro eleganza in campo.</p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Sport con la Racchetta. Tutti i diritti riservati.</p>
+    <p>&copy; 2025 Tennis - Tutti i diritti riservati</p>
   </footer>
 
 </body>
 </html>
+
 
 
